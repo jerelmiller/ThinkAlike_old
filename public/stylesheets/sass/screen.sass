@@ -1,5 +1,9 @@
 /* Color Variables */
 $grey_color: #726659
+$light_grey: #999187
+
+/* Style Variables */
+$arial_family: Arial, Helvetica
 
 /* General Styles */
 
@@ -7,7 +11,16 @@ html, body
   height: 100%
   margin: 0
   padding: 0
-  //background: url(/images/lgrey092.gif)
+  background: url(/images/lgrey092.gif)
+
+a
+  color: $light_grey
+  text-decoration: none
+  &:visited
+    color: $light_grey
+  &:hover
+    color: $light_grey
+  
 
 hr
   height: 3px
@@ -23,12 +36,27 @@ hr
 .right
   float: right
 
+.clear
+  clear: both
+
 /* div styles */
 .header
   height: 90px
   background: black
+  color: $light_grey
   .header_container
     width: 900px
     margin: 0 auto
     #logo
-      background: white
+      margin-top: 45px
+    #nav
+      list-style-type: none
+      margin: 45px 0 0 0 
+      height: 42px
+      line-height: 65px
+      font-size: .9em
+      font-family: $arial_family
+      li
+        display: inline
+        margin: 0 40px
+

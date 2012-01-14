@@ -9,8 +9,13 @@
 %body
   .header
     .header_container
-      #logo.left
-        Think Alike
+      #logo.left= link_to image_tag('/images/logo.png'), root_path
       %ul#nav.left
+        %li= link_to 'WORK', root_path
+        |
+        %li= link_to 'ABOUT', root_path
+        |
+        %li= link_to 'CONTACT', root_path
   %hr
-  = yield
+  .content
+    = yield

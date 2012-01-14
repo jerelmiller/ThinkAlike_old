@@ -1,13 +1,29 @@
 /* Color Variables */
+/* Style Variables */
 /* General Styles */
-/* line 6, sass/screen.sass */
+/* line 10, sass/screen.sass */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  background: url(/images/lgrey092.gif);
 }
 
-/* line 12, sass/screen.sass */
+/* line 16, sass/screen.sass */
+a {
+  color: #999187;
+  text-decoration: none;
+}
+/* line 19, sass/screen.sass */
+a:visited {
+  color: #999187;
+}
+/* line 21, sass/screen.sass */
+a:hover {
+  color: #999187;
+}
+
+/* line 25, sass/screen.sass */
 hr {
   height: 3px;
   color: #726659;
@@ -17,28 +33,48 @@ hr {
 }
 
 /* General div styles */
-/* line 20, sass/screen.sass */
+/* line 33, sass/screen.sass */
 .left {
   float: left;
 }
 
-/* line 23, sass/screen.sass */
+/* line 36, sass/screen.sass */
 .right {
   float: right;
 }
 
+/* line 39, sass/screen.sass */
+.clear {
+  clear: both;
+}
+
 /* div styles */
-/* line 27, sass/screen.sass */
+/* line 43, sass/screen.sass */
 .header {
   height: 90px;
   background: black;
+  color: #999187;
 }
-/* line 30, sass/screen.sass */
+/* line 47, sass/screen.sass */
 .header .header_container {
   width: 900px;
   margin: 0 auto;
 }
-/* line 33, sass/screen.sass */
+/* line 50, sass/screen.sass */
 .header .header_container #logo {
-  background: white;
+  margin-top: 45px;
+}
+/* line 52, sass/screen.sass */
+.header .header_container #nav {
+  list-style-type: none;
+  margin: 45px 0 0 0;
+  height: 42px;
+  line-height: 65px;
+  font-size: 0.9em;
+  font-family: Arial, Helvetica;
+}
+/* line 59, sass/screen.sass */
+.header .header_container #nav li {
+  display: inline;
+  margin: 0 40px;
 }
