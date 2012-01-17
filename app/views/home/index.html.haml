@@ -1,24 +1,61 @@
 #what_we_do
-  %span.inset_shadow_dark_tan.section_text GRAPHIC DESIGN
-  %span.inset_shadow_light_tan.section_text BRANDING
+  = image_tag '/images/border_img.png'
   %br
-  %span.inset_shadow_light_tan.section_text.second_row WEB DESIGN
-  %span.inset_shadow_dark_tan.section_text.second_row ILLUSTRATION
   %br
-  %span.inset_shadow_dark_tan.section_text.third_row VIDEO
-  %span.inset_shadow_light_tan.section_text.third_row MOTION GRAPHICS
+  = image_tag '/images/intro_words.png'
+  %br
+  %br
+  = image_tag '/images/border_img.png'
 
 #work_header
   #catch_phrase
     A creative collective, doing creative things...
     %br
     %span.medium_font In short, we design stuff.
-  #work_title.inset_shadow_blue.section_text
-    WORK
 
-  %ul#portfolio_links
+  #portfolio_links
+    .button_link#collective.left= link_to 'Collective', root_path
+    .button_link#video.left= link_to 'Video', root_path
+    .button_link#graphic.left= link_to 'Graphic', root_path
+    .button_link#web.left.no_margin_right= link_to 'Web', root_path
+
+#who_are_we
+  .three_column_layout_container
+    .column.left
+      #left_column
+      .section_text.name
+        Josiah Mothershed
+      .image
+        Josiah's Monkey Face
+      .border
+      %p.bio
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque posuere, metus ut pretium vehicula, lectus neque malesuada tortor, quis viverra tellus orci at neque. Nullam sed urna libero. Duis condimentum est ut nisl accumsan a ullamcorper lacus viverra.
+
+      %p.bio
+        Maecenas lectus purus, fermentum sollicitudin porttitor id, ullamcorper eget arcu. Vivamus iaculis placerat eros, vel elementum justo faucibus vitae. Donec mauris augue, egestas vel porttitor ut, gravida ut purus. Integer eget ullamcorper augue.
+    .column.left
+      #middle_column
+      .section_text.name
+        Jerel Miller
+      .image
+        Jerel's Model Face
+      .border
+      %p.bio
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque posuere, metus ut pretium vehicula, lectus neque malesuada tortor, quis viverra tellus orci at neque. Nullam sed urna libero. Duis condimentum est ut nisl accumsan a ullamcorper lacus viverra.
+
+      %p.bio
+        Maecenas lectus purus, fermentum sollicitudin porttitor id, ullamcorper eget arcu. Vivamus iaculis placerat eros, vel elementum justo faucibus vitae. Donec mauris augue, egestas vel porttitor ut, gravida ut purus. Integer eget ullamcorper augue.
+    .column.left.no_margin_right
+      #right_column
+      .section_text.name
+        Benjamin Harris
+      .image
+        Ben's Constipation Face
+      .border
+      %p.bio
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque posuere, metus ut pretium vehicula, lectus neque malesuada tortor, quis viverra tellus orci at neque. Nullam sed urna libero. Duis condimentum est ut nisl accumsan a ullamcorper lacus viverra.
+
+      %p.bio
+        Maecenas lectus purus, fermentum sollicitudin porttitor id, ullamcorper eget arcu. Vivamus iaculis placerat eros, vel elementum justo faucibus vitae. Donec mauris augue, egestas vel porttitor ut, gravida ut purus. Integer eget ullamcorper augue.
+    .clear
     
-    %li#collective_portfolio= link_to 'Collective', root_path
-    %li= link_to '', root_path, :id => 'video'
-    %li= link_to '', root_path, :id => 'graphic'
-    %li= link_to '', root_path, :id => 'web'
