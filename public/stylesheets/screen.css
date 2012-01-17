@@ -1,5 +1,183 @@
+/* Color Variables */
+/* Style Variables */
+/* Style Functions */
+@font-face {
+  font-family: "Chunk";
+  src: url(/fonts/Chunk.otf);
+}
+
 /* General Styles */
-/* line 4, sass/screen.sass */
-body {
+/* line 31, sass/screen.sass */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: url(/images/lgrey092.gif);
+}
+
+/* line 37, sass/screen.sass */
+a {
+  color: #999187;
+  text-decoration: none;
+}
+/* line 40, sass/screen.sass */
+a:visited {
+  color: #999187;
+}
+/* line 42, sass/screen.sass */
+a:hover {
+  color: #999187;
+}
+
+/* line 46, sass/screen.sass */
+hr {
+  height: 3px;
+  color: #726659;
+  background-color: #726659;
+  width: 100%;
+  margin: 3px 0;
+}
+
+/* General div styles */
+/* line 55, sass/screen.sass */
+.left {
+  float: left;
+}
+
+/* line 58, sass/screen.sass */
+.right {
+  float: right;
+}
+
+/* line 61, sass/screen.sass */
+.clear {
+  clear: both;
+}
+
+/* line 64, sass/screen.sass */
+.inset_shadow_dark_tan {
+  color: #726659;
+  text-shadow: 0px -3px 3px black;
+}
+
+/* line 74, sass/screen.sass */
+.inset_shadow_light_tan {
+  background-color: #222222;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: #c2b59b 0px 3px 3px;
+}
+
+/* line 80, sass/screen.sass */
+.inset_shadow_blue {
+  background-color: #222222;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: #27aaff 0px 3px 3px;
+}
+
+/* line 86, sass/screen.sass */
+.light_tan {
+  color: #c2b59b;
+}
+
+/* line 89, sass/screen.sass */
+.section_text {
+  font-family: Chunk, Arial, Helvetica;
+}
+
+/* div styles */
+/* line 93, sass/screen.sass */
+.header {
+  height: 90px;
   background: black;
+  color: #999187;
+}
+/* line 97, sass/screen.sass */
+.header .header_container {
+  width: 900px;
+  margin: 0 auto;
+}
+/* line 100, sass/screen.sass */
+.header .header_container #logo {
+  margin-top: 45px;
+}
+/* line 102, sass/screen.sass */
+.header .header_container #nav {
+  list-style-type: none;
+  margin: 45px 0 0 0;
+  height: 42px;
+  line-height: 65px;
+  font-size: 0.9em;
+  font-family: Arial, Helvetica;
+}
+/* line 109, sass/screen.sass */
+.header .header_container #nav li {
+  display: inline;
+  margin: 0 40px;
+}
+
+/* line 113, sass/screen.sass */
+.content {
+  width: 900px;
+  margin: 30px auto;
+}
+/* line 119, sass/screen.sass */
+.content #what_we_do {
+  margin-top: 50px;
+  padding: 20px 16px;
+  font-size: 57px;
+}
+/* line 124, sass/screen.sass */
+.content #what_we_do .second_row {
+  font-size: 58px;
+}
+/* line 126, sass/screen.sass */
+.content #what_we_do .third_row {
+  font-size: 63px;
+}
+/* line 128, sass/screen.sass */
+.content #work_header {
+  background: url(/images/drawings.png) no-repeat center 20px, url(/images/work_guides.png) no-repeat center 85px;
+  height: 375px;
+  margin-top: 20px;
+}
+/* line 132, sass/screen.sass */
+.content #work_header #catch_phrase {
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+/* line 137, sass/screen.sass */
+.content #work_header #catch_phrase span.medium_font {
+  font-size: 1.7em;
+  position: relative;
+  top: 5px;
+}
+/* line 141, sass/screen.sass */
+.content #work_header #work_title {
+  margin: 100px auto 0;
+  text-align: center;
+  font-size: 63px;
+}
+/* line 146, sass/screen.sass */
+.content #work_header #portfolio_links {
+  margin-top: 155px;
+  list-style-type: none;
+}
+/* line 149, sass/screen.sass */
+.content #work_header #portfolio_links a {
+  height: 200px;
+  width: 300px;
+}
+/* line 153, sass/screen.sass */
+.content #work_header #portfolio_links #collective_portfolio {
+  background: url(/images/work_buttons.png);
+  height: 200px;
+  width: 300px;
 }

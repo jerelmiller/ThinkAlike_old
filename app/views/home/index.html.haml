@@ -1,2 +1,24 @@
-%h1 Home#index
-%p Find me in app/views/home/index.html.erb
+#what_we_do
+  %span.inset_shadow_dark_tan.section_text GRAPHIC DESIGN
+  %span.inset_shadow_light_tan.section_text BRANDING
+  %br
+  %span.inset_shadow_light_tan.section_text.second_row WEB DESIGN
+  %span.inset_shadow_dark_tan.section_text.second_row ILLUSTRATION
+  %br
+  %span.inset_shadow_dark_tan.section_text.third_row VIDEO
+  %span.inset_shadow_light_tan.section_text.third_row MOTION GRAPHICS
+
+#work_header
+  #catch_phrase
+    A creative collective, doing creative things...
+    %br
+    %span.medium_font In short, we design stuff.
+  #work_title.inset_shadow_blue.section_text
+    WORK
+
+  %ul#portfolio_links
+    
+    %li#collective_portfolio= link_to 'Collective', root_path
+    %li= link_to '', root_path, :id => 'video'
+    %li= link_to '', root_path, :id => 'graphic'
+    %li= link_to '', root_path, :id => 'web'
