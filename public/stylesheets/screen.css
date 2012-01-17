@@ -7,7 +7,7 @@
 }
 
 /* General Styles */
-/* line 30, sass/screen.sass */
+/* line 31, sass/screen.sass */
 html, body {
   height: 100%;
   margin: 0;
@@ -15,21 +15,21 @@ html, body {
   background: url(/images/lgrey092.gif);
 }
 
-/* line 36, sass/screen.sass */
+/* line 37, sass/screen.sass */
 a {
   color: #999187;
   text-decoration: none;
 }
-/* line 39, sass/screen.sass */
+/* line 40, sass/screen.sass */
 a:visited {
   color: #999187;
 }
-/* line 41, sass/screen.sass */
+/* line 42, sass/screen.sass */
 a:hover {
   color: #999187;
 }
 
-/* line 45, sass/screen.sass */
+/* line 46, sass/screen.sass */
 hr {
   height: 3px;
   color: #726659;
@@ -39,22 +39,22 @@ hr {
 }
 
 /* General div styles */
-/* line 54, sass/screen.sass */
+/* line 55, sass/screen.sass */
 .left {
   float: left;
 }
 
-/* line 57, sass/screen.sass */
+/* line 58, sass/screen.sass */
 .right {
   float: right;
 }
 
-/* line 60, sass/screen.sass */
+/* line 61, sass/screen.sass */
 .clear {
   clear: both;
 }
 
-/* line 63, sass/screen.sass */
+/* line 64, sass/screen.sass */
 .inset_shadow_dark_tan {
   background-color: #222222;
   -moz-background-clip: text;
@@ -64,7 +64,7 @@ hr {
   text-shadow: #726659 0px 3px 3px;
 }
 
-/* line 71, sass/screen.sass */
+/* line 72, sass/screen.sass */
 .inset_shadow_light_tan {
   background-color: #222222;
   -moz-background-clip: text;
@@ -74,33 +74,43 @@ hr {
   text-shadow: #c2b59b 0px 3px 3px;
 }
 
-/* line 77, sass/screen.sass */
+/* line 78, sass/screen.sass */
+.inset_shadow_blue {
+  background-color: #222222;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: #27aaff 0px 3px 3px;
+}
+
+/* line 84, sass/screen.sass */
 .light_tan {
   color: #c2b59b;
 }
 
-/* line 80, sass/screen.sass */
+/* line 87, sass/screen.sass */
 .section_text {
   font-family: Chunk, Arial, Helvetica;
 }
 
 /* div styles */
-/* line 84, sass/screen.sass */
+/* line 91, sass/screen.sass */
 .header {
   height: 90px;
   background: black;
   color: #999187;
 }
-/* line 88, sass/screen.sass */
+/* line 95, sass/screen.sass */
 .header .header_container {
   width: 900px;
   margin: 0 auto;
 }
-/* line 91, sass/screen.sass */
+/* line 98, sass/screen.sass */
 .header .header_container #logo {
   margin-top: 45px;
 }
-/* line 93, sass/screen.sass */
+/* line 100, sass/screen.sass */
 .header .header_container #nav {
   list-style-type: none;
   margin: 45px 0 0 0;
@@ -109,28 +119,53 @@ hr {
   font-size: 0.9em;
   font-family: Arial, Helvetica;
 }
-/* line 100, sass/screen.sass */
+/* line 107, sass/screen.sass */
 .header .header_container #nav li {
   display: inline;
   margin: 0 40px;
 }
 
-/* line 104, sass/screen.sass */
+/* line 111, sass/screen.sass */
 .content {
   width: 900px;
-  margin: 0 auto;
+  margin: 30px auto;
 }
-/* line 109, sass/screen.sass */
+/* line 117, sass/screen.sass */
 .content #what_we_do {
   margin-top: 50px;
   padding: 20px 16px;
   font-size: 57px;
 }
-/* line 114, sass/screen.sass */
+/* line 122, sass/screen.sass */
 .content #what_we_do .second_row {
   font-size: 58px;
 }
-/* line 116, sass/screen.sass */
+/* line 124, sass/screen.sass */
 .content #what_we_do .third_row {
+  font-size: 63px;
+}
+/* line 126, sass/screen.sass */
+.content #work_header {
+  background: url(/images/drawings.png) no-repeat center 20px, url(/images/work_guides.png) no-repeat center 85px;
+  height: 375px;
+  margin-top: 20px;
+}
+/* line 130, sass/screen.sass */
+.content #work_header #catch_phrase {
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+/* line 135, sass/screen.sass */
+.content #work_header #catch_phrase span.medium_font {
+  font-size: 1.7em;
+  position: relative;
+  top: 5px;
+}
+/* line 139, sass/screen.sass */
+.content #work_header #work_title {
+  margin: 100px auto 0;
+  text-align: center;
   font-size: 63px;
 }

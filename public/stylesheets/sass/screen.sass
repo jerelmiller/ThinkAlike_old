@@ -3,6 +3,7 @@ $dark_tan: #726659
 $dark_tan_rgb: 114, 102, 89
 $light_grey: #999187
 $light_tan: #C2B59B
+$blue: #27AAE1
 
 /* Style Variables */
 $arial_family: Arial, Helvetica
@@ -74,6 +75,12 @@ hr
   color: transparent
   text-shadow: rgba(194, 181, 155, 1.0) 0px 3px 3px
 
+.inset_shadow_blue
+  background-color: #222
+  @include text_clip
+  color: transparent
+  text-shadow: rgba(39, 170, 255, 1.0) 0px 3px 3px
+
 .light_tan
   color: $light_tan
 
@@ -103,7 +110,8 @@ hr
 
 .content
   width: 900px
-  margin: 0 auto
+  margin: 30px auto
+  //font-family: $arial_family
   //border-width: 4px 0
   //@include border_image
   #what_we_do
@@ -115,7 +123,24 @@ hr
       font-size: 58px
     .third_row
       font-size: 63px
-    //text-shadow: 0px 3px 3px black
+  #work_header
+    background: url(/images/drawings.png) no-repeat center 20px, url(/images/work_guides.png) no-repeat center 85px
+    height: 375px
+    margin-top: 20px
+    #catch_phrase
+      margin: 0 auto
+      text-align: center
+      font-weight: bold
+      font-size: 1.1em
+      span.medium_font
+        font-size: 1.7em
+        position: relative
+        top: 5px
+    #work_title
+      margin: 100px auto 0
+      text-align: center
+      font-size: 63px
+
     
 
   
