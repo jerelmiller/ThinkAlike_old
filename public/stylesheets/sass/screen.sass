@@ -36,7 +36,7 @@ $chunk_family: Chunk, Arial, Helvetica
 html, body
   height: 100%
   margin: 0
-  padding: 0 0 100px 0
+  padding: 0
   background: url(/images/lgrey092.gif)
 
 a
@@ -46,14 +46,6 @@ a
     color: $light_grey
   &:hover
     color: $light_grey
-  
-
-hr
-  height: 3px
-  color: $dark_tan
-  background-color: $dark_tan
-  width: 100%
-  margin: 3px 0
 
 
 /* General div styles */
@@ -78,6 +70,8 @@ hr
 /* div styles */
 .header
   height: 90px
+  width: 100%
+  min-width: 900px
   background: black
   color: $light_grey
   .header_container
@@ -95,6 +89,14 @@ hr
       li
         display: inline
         margin: 0 40px
+
+.seperator
+  height: 3px
+  color: $dark_tan
+  background-color: $dark_tan
+  width: 100%
+  min-width: 900px
+  margin: 3px 0
 
 .content
   width: 900px
