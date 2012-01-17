@@ -1,7 +1,13 @@
 /* Color Variables */
 /* Style Variables */
+/* Style Functions */
+@font-face {
+  font-family: "Chunk";
+  src: url(/fonts/Chunk.otf);
+}
+
 /* General Styles */
-/* line 10, sass/screen.sass */
+/* line 30, sass/screen.sass */
 html, body {
   height: 100%;
   margin: 0;
@@ -9,21 +15,21 @@ html, body {
   background: url(/images/lgrey092.gif);
 }
 
-/* line 16, sass/screen.sass */
+/* line 36, sass/screen.sass */
 a {
   color: #999187;
   text-decoration: none;
 }
-/* line 19, sass/screen.sass */
+/* line 39, sass/screen.sass */
 a:visited {
   color: #999187;
 }
-/* line 21, sass/screen.sass */
+/* line 41, sass/screen.sass */
 a:hover {
   color: #999187;
 }
 
-/* line 25, sass/screen.sass */
+/* line 45, sass/screen.sass */
 hr {
   height: 3px;
   color: #726659;
@@ -33,38 +39,68 @@ hr {
 }
 
 /* General div styles */
-/* line 33, sass/screen.sass */
+/* line 54, sass/screen.sass */
 .left {
   float: left;
 }
 
-/* line 36, sass/screen.sass */
+/* line 57, sass/screen.sass */
 .right {
   float: right;
 }
 
-/* line 39, sass/screen.sass */
+/* line 60, sass/screen.sass */
 .clear {
   clear: both;
 }
 
+/* line 63, sass/screen.sass */
+.inset_shadow_dark_tan {
+  background-color: #222222;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: #726659 0px 3px 3px;
+}
+
+/* line 71, sass/screen.sass */
+.inset_shadow_light_tan {
+  background-color: #222222;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: #c2b59b 0px 3px 3px;
+}
+
+/* line 77, sass/screen.sass */
+.light_tan {
+  color: #c2b59b;
+}
+
+/* line 80, sass/screen.sass */
+.section_text {
+  font-family: Chunk, Arial, Helvetica;
+}
+
 /* div styles */
-/* line 43, sass/screen.sass */
+/* line 84, sass/screen.sass */
 .header {
   height: 90px;
   background: black;
   color: #999187;
 }
-/* line 47, sass/screen.sass */
+/* line 88, sass/screen.sass */
 .header .header_container {
   width: 900px;
   margin: 0 auto;
 }
-/* line 50, sass/screen.sass */
+/* line 91, sass/screen.sass */
 .header .header_container #logo {
   margin-top: 45px;
 }
-/* line 52, sass/screen.sass */
+/* line 93, sass/screen.sass */
 .header .header_container #nav {
   list-style-type: none;
   margin: 45px 0 0 0;
@@ -73,8 +109,28 @@ hr {
   font-size: 0.9em;
   font-family: Arial, Helvetica;
 }
-/* line 59, sass/screen.sass */
+/* line 100, sass/screen.sass */
 .header .header_container #nav li {
   display: inline;
   margin: 0 40px;
+}
+
+/* line 104, sass/screen.sass */
+.content {
+  width: 900px;
+  margin: 0 auto;
+}
+/* line 109, sass/screen.sass */
+.content #what_we_do {
+  margin-top: 50px;
+  padding: 20px 16px;
+  font-size: 57px;
+}
+/* line 114, sass/screen.sass */
+.content #what_we_do .second_row {
+  font-size: 58px;
+}
+/* line 116, sass/screen.sass */
+.content #what_we_do .third_row {
+  font-size: 63px;
 }
