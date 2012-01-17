@@ -62,10 +62,12 @@ hr
   clear: both
 
 .inset_shadow_dark_tan
-  background-color: #222
-  @include text_clip
-  color: transparent
-  text-shadow: rgba(114, 102, 89, 1.0) 0px 3px 3px
+  //background-color: #222
+  //@include text_clip
+  //color: transparent
+  //text-shadow: rgba(114, 102, 89, 1.0) 0px 3px 3px
+  color: $dark_tan
+  text-shadow: 0px -3px 3px black
   //color: $dark_tan
   //opacity: .5
 
@@ -140,6 +142,19 @@ hr
       margin: 100px auto 0
       text-align: center
       font-size: 63px
+
+    #portfolio_links
+      margin-top: 155px
+      list-style-type: none
+      a
+        height: 200px
+        width: 300px
+        //display: none
+      #collective_portfolio
+        background: url(/images/work_buttons.png)
+        height: 200px
+        width: 300px
+
 
     
 
